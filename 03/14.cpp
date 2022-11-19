@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main() {
+    while (true) {
+        char input;
+        std::cout << "Podaj znak: ";
+        std::cin >> input;
+
+        if (input == 'k') {
+            std::cout << "Na razie :)\n";
+            break;
+        }
+        if (input > 47 && input < 58) std::cout << "Jest to cyfra\n";
+        if (input > 96 && input < 123) std::cout << "Jest to mała litera\n";
+        if (input > 64 && input < 91) std::cout << "Jest to duża litera\n";
+    }
+}
