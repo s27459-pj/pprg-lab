@@ -1,9 +1,7 @@
 #include <iostream>
 
-#define MAX_SIZE 100
 
 int main() {
-    char chars[MAX_SIZE] = { 0 };
     uint count = 0;
     uint big_letters = 0;
 
