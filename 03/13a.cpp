@@ -181,6 +181,35 @@ int main() {
     }
     std::cout << "\n\n";
 
+    // 1.
+    float avg = average(numbers, n);
+    std::cout << "Średnia arytmetyczna elementów: " << avg << '\n';
+
+    // 2.
+    int search;
+    std::cout << "Jaki element chcesz wyszukać? ";
+    std::cin >> search;
+    int appearances = numberOfItem(numbers, n, search);
+    std::cout << "Element " << search << " występuje " << appearances << " raz(y)\n";
+
+    // 3.
+    int odd_number_sum;
+    int odd_numbers = countOddNumbers(numbers, n, odd_number_sum);
+    std::cout << "W tablicy znajduje się " << odd_numbers
+              << " liczb nieparzystych. Ich suma wynosi " << odd_number_sum << '\n';
+
+    // 4.
+    int smallest_number_index;
+    int smallest_number = minNumber(numbers, n, smallest_number_index);
+    std::cout << "Najmniejsza liczba: " << smallest_number << " (indeks "
+              << smallest_number_index << ")\n";
+
+    // 5.
+    int biggest_number_index;
+    int smallest_number = maxNumber(numbers, n, biggest_number_index);
+    std::cout << "Największa liczba: " << smallest_number << " (indeks "
+              << biggest_number_index << ")\n";
+
     // 6.
     int a, b;
     int biggest_pair_sum = biggestPair(numbers, n, a, b);
